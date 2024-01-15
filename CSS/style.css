@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: turquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+  }
+  
+  h1 {
+    font-family: 'Roboto';
+    font-weight: 400;
+  }
+  
+  h4 {
+    position: relative;
+    font-family: 'Segoe UI';
+    
+  }
+  
+  h4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  h4::before {
+    background: white;
+    animation: tulisan 5s steps(65) forwards;
+  }
+  
+  h4::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  h4::after {
+    background: black;
+    width: 1px;
+    animation: tulisan 5s steps(65) forwards;
+  }
+  
+  @keyframes tulisan{
+    to{
+        left: 100%;
+    }
+  }
+  
+  p.web {
+    margin-top: -10px;
+    font-size: x-small;
+    color: #739072;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    background-color: #2880B9;
+    text-align: center;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .calculator-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #739072;
+  }
+  
+  button:active {
+    background-color: #739072;
+    transform: translateY(10px);
+  }
+  
+  .buttons button:last-child {
+    margin-right: 0;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
